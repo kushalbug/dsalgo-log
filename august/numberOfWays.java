@@ -1,5 +1,7 @@
 //day 2 
 
+import java.util.Arrays;
+
 class Solution {
     static final int MOD = 1_000_000_007;
     long[][] dp;
