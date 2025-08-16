@@ -1,4 +1,4 @@
-//day-4
+//day-5
 
 class Solution {
     public boolean isPowerOfFour(int n) {
