@@ -1,7 +1,6 @@
 import java.util.Arrays;
 
-public 
-class Solution {
+public class Solution {
     public boolean containsDuplicate(int nums[]){
         Arrays.sort(nums);
         for(int i = 0; i < nums.length - 1; i++){
@@ -11,6 +10,4 @@ class Solution {
         }
         return false;
     }
-} {
-    
-}
+} 
