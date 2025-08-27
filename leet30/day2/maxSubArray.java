@@ -1,6 +1,6 @@
 package leet30.day2;
 
-public class Solution {
+public class maxSubArray {
     public int maxSubArray(int[] nums) {
         int maxSum = nums[0];
         int currentSum = nums[0];
