@@ -1,3 +1,4 @@
+package leet30.day1;
 class Solution {
     public int maxProfit(int[] prices) {
         int buyPrice = prices[0];

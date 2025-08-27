@@ -1,3 +1,4 @@
+package leet30.day1;
 import java.util.Arrays;
 
 public class Solution {
