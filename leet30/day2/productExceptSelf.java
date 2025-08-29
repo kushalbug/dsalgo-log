@@ -1,6 +1,6 @@
-package leet30.day2;
+package day2;
 
-public class productExceptSelf {
+public class Solution {
     public int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int[] output = new int[n];

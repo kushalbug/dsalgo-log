@@ -1,6 +1,6 @@
-package leet30.day2;
+package day2;
 
-public class subarraySum {
+public class Solution {
     public int subarraySum(int[] nums, int k) {
         int count = 0;
         for (int start = 0; start < nums.length; start++) {
