@@ -1,4 +1,4 @@
-package leet30.day2;
+package day2;
 
 public class maxSubArray {
     public int maxSubArray(int[] nums) {
