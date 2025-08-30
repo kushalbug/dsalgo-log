@@ -1,5 +1,6 @@
 //day - 20
 import java.util.*;
+
 class Solution {
     public boolean isValidSudoku(char[][] board) {
         // 9 sets for rows, columns, and boxes
