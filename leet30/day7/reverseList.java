@@ -1,4 +1,4 @@
-package day6;
+package day7;
 import java.util.*;
 
 class Solution {

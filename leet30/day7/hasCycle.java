@@ -1,4 +1,4 @@
-package day6;
+package day7;
 
 class Solution {
     public boolean hasCycle(ListNode head) {
