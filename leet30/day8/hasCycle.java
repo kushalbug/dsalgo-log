@@ -1,4 +1,4 @@
-package day7;
+package leet30.day8;
 
 class Solution {
     public boolean hasCycle(ListNode head) {
