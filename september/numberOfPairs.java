@@ -1,3 +1,5 @@
+//day-23 of daily log
+
 class Solution {
     public int numberOfPairs(int[][] points) {
         int n = points.length;
