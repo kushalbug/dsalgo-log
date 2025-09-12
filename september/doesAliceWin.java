@@ -1,4 +1,4 @@
-//day-32 of daily log
+//day-33 of daily log
 
 class Solution {
     public boolean doesAliceWin(String s) {
