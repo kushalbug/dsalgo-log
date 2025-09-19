@@ -13,7 +13,7 @@ public class linkedList {
 
     public void reverse(){
         Node prev = null;
-        Node curr = head;
+        Node curr = tail = head;
         Node next;
 
         while(curr != null){
