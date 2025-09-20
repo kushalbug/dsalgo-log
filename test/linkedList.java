@@ -52,7 +52,7 @@ public class linkedList {
         return;
     }
 
-    public boolean isCycle(){
+    public static boolean isCycle(){
         Node slow = head;
         Node fast = head;
 
