@@ -1,3 +1,4 @@
+//reverse a stack using recursion
 import java.util.*;
 
 public class StackA {
