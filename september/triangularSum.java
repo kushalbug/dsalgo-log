@@ -1,3 +1,5 @@
+//day 51 of leetcode
+
 class Solution {
     public int triangularSum(int[] nums) {
         int n = nums.length;
