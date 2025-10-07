@@ -1,3 +1,4 @@
+package Stack;
 public class Stock {
     public static void stockSpan(int stocks[],int span[]){
         
