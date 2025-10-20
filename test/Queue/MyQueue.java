@@ -1,3 +1,5 @@
+//leetcode - 232
+
 import java.util.*;
 class MyQueue {
     private Stack<Integer> s1;
