@@ -1,3 +1,4 @@
+package greedy;
 import java.util.*;
 
 public class MaxAct {
@@ -12,13 +13,13 @@ public class MaxAct {
         //1st activity
         maxAcc = 1;
         ans.add(0);
-        int lastEnd = end[0];
+        // int lastEnd = end[0];
         for(int i=1; i<end.length; i++){
-            if(start[i] >= lastEnd){
+            if(start[i] >= end[i]){
                 //activity select
                 maxAcc++;
                 ans.add(i);
-                lastEnd = end[i];
+                // lastEnd = end[i];
             }
         }
 
