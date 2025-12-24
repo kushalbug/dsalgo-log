@@ -114,6 +114,27 @@ public class kthLevel {
 
         return dist1 + dist2;
     }
+
+    public static int kAncesstor(Node root, int n, int k) {
+        if (root == null) {
+            return -1;
+        }
+        if (root.data == n) {
+            return k;
+        }
+
+        int leftDist = kAncesstor(root.left, n, k + 1);
+        int rightDist = kAncesstor(root.right, n, k + 1);
+
+        if(leftDist == -1 && rightDist == -1) {
+            return -1;
+        }
+        int max = Math.max(leftDist, rightDist);
+        if(max+1 == k) {
+            System.out.println(root.data);
+        }
+        return max + 1;
+    }
     public static void main(String[] args) {
         /* 
                  1
