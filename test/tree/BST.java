@@ -77,6 +77,22 @@ public class BST {
         }
         return root;
     }
+
+    public static void printInrange(Node root, int k1, int k2) {
+        if (root == null) {
+            return;
+        }
+        if (root.data >= k1 && root.data <= k2) {
+            printInrange(root.left, k1, k2);
+            System.out.print(root.data + " ");
+            printInrange(root.right, k1, k2);
+        } else if (root.data < k1) {
+            printInrange(root.right, k1, k2);
+        } else {
+            printInrange(root.left, k1, k2);
+        }
+    }
+
     public static void main(String[] args) {
         int values[] = {8, 5, 3, 1, 4, 6, 7, 10, 11, 14};
         Node root = null;
