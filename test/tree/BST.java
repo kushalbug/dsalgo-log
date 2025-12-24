@@ -81,10 +81,14 @@ public class BST {
         int values[] = {8, 5, 3, 1, 4, 6, 7, 10, 11, 14};
         Node root = null;
 
-        for (int val : values) {
-            root = insert(root, val);
+        for (int i = 0; i < values.length; i++) {
+            root = insert(root, values[i]);
         }
+        inorder(root);
+        System.out.println();
 
+        root = delete(root, 4);
+        System.out.println();
         inorder(root);
     }
 }
