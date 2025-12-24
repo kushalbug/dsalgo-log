@@ -44,8 +44,41 @@ public class BST {
             return search(root.right, key);
         }
     }
+
+    public static Node delete(Node root, int val) {
+        if (root == null) {
+            return null;
+        }
+        if (val < root.data) {
+            root.left = delete(root.left, val);
+        } else if (val > root.data) {
+            root.right = delete(root.right, val);
+        } else {
+            // Node to be deleted found
+            if (root.left == null && root.right == null) {  //case 1 : leaf node
+                return null;
+            } else if (root.left == null) {  //case 2 : one child
+                return root.right;
+            } else if (root.right == null) {
+                return root.left;
+            } else {
+                // Node with two children : find inorder successor : case 3
+                Node IS = findInorderSuccessor(root.right);
+                root.data = IS.data;
+                root.right = delete(root.right, IS.data);
+            }
+        }
+        return root;
+    }
+
+    public static Node findInorderSuccessor(Node root) {
+        while (root.left != null) {
+            root = root.left;
+        }
+        return root;
+    }
     public static void main(String[] args) {
-        int values[] = {5, 1, 3, 4, 2, 7};
+        int values[] = {8, 5, 3, 1, 4, 6, 7, 10, 11, 14};
         Node root = null;
 
         for (int val : values) {
