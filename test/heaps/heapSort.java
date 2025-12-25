@@ -1,5 +1,5 @@
 // import java.util.*;
-public class heapSort {
+public class heapSort { //nlog n
     public static void heapify(int arr[],int i, int size) {
         int left = 2 * i + 1;
         int right = 2 * i + 2;
