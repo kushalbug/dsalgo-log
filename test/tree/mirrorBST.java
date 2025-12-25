@@ -41,8 +41,8 @@ public class mirrorBST {
         root.right = createBST(arr, mid + 1, end);
         return root;
     }
-        
     public static void main(String args[]) {
+        
         /*
                  4
                /   \
