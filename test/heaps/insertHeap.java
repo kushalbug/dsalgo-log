@@ -15,6 +15,9 @@ public class insertHeap {
                 arr.set(x, arr.get(par));
                 arr.set(par, temp);
 
+                x = par;
+                par = (x - 1) / 2;
+
             }
         }
 
@@ -62,6 +65,19 @@ public class insertHeap {
 
         public boolean isEmpty() {
             return arr.size() == 0;
+        }
+    }
+
+    public static void main(String[] args) {
+        Heap h = new Heap();
+        h.insert(3);
+        h.insert(4);
+        h.insert(1);
+        h.insert(5);
+
+        while (!h.isEmpty()) {
+            System.out.println(h.peek());
+            h.remove();
         }
     }
 }
