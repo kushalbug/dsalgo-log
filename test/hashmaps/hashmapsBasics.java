@@ -11,7 +11,7 @@ public class hashmapsBasics {
         int poplation = hm.get("India");
         System.out.println(poplation);
 
-        // iterate through keys
+        // iterate through keys 
         Set<String> keys = hm.keySet();
         for (String k : keys) {
             System.out.println("Key: " + k + " Value: " + hm.get(k));
